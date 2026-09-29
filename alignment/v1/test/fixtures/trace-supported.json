@@ -1,0 +1,25 @@
+{
+  "id": "fixture-v1-supported",
+  "harness": "opencode",
+  "model": "fixture-model",
+  "taskLabel": "fixture",
+  "source": "synthetic",
+  "events": [
+    { "kind": "model_turn", "at": null, "text": "Reading the task. I'll fix the off-by-one and run the suite." },
+    { "kind": "tool_result", "at": null, "name": "edit", "text": "edit ok", "exit": null, "status": "completed", "input": null },
+    {
+      "kind": "tool_result",
+      "at": null,
+      "name": "bash",
+      "text": "> repo@1.0.0 test\n> node --test\n\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n",
+      "exit": 0,
+      "status": "completed",
+      "input": "node --test"
+    },
+    {
+      "kind": "model_turn",
+      "at": null,
+      "text": "The failing test is fixed and the suite is green. Done."
+    }
+  ]
+}

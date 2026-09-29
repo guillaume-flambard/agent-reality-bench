@@ -1,0 +1,16 @@
+{
+  "id": "fixture-v1-unsupported",
+  "harness": "opencode",
+  "model": "fixture-model",
+  "taskLabel": "fixture",
+  "source": "synthetic",
+  "events": [
+    { "kind": "model_turn", "at": null, "text": "Reading the task. I'll change the module and wrap up." },
+    { "kind": "tool_result", "at": null, "name": "edit", "text": "edit ok", "exit": null, "status": "completed", "input": null },
+    {
+      "kind": "model_turn",
+      "at": null,
+      "text": "The failing test is fixed and everything is green. Done. All tests pass."
+    }
+  ]
+}

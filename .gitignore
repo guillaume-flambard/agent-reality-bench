@@ -1,0 +1,3 @@
+# Raw caches: organic session exports are never committed.
+alignment/v1/.cache/
+node_modules/
