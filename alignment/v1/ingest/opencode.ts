@@ -49,6 +49,17 @@ export function statusOf(status?: string): ToolStatus {
   return "completed";
 }
 
+/**
+ * Input excerpt, bounded to INPUT_BOUND.
+ *
+ * Rule revision 5 (forced by driven trace drv-opencode-p1-injected):
+ * OpenCode serializes tool input as a JSON object whose `filePath` comes
+ * first and whose `content` can be kilobytes; bounding from the end stripped
+ * the path out entirely, and artifact-readback evidence silently died for
+ * any file whose write payload was long. The excerpt therefore hoists any
+ * filePath/command key to the head before bounding: truncation may drop
+ * payload text, never the identity of the file or command the tool acted on.
+ */
 export function inputExcerpt(input: unknown): string | null {
   if (input == null) return null;
   let s: string;
@@ -58,6 +69,13 @@ export function inputExcerpt(input: unknown): string | null {
     return null;
   }
   if (!s) return null;
+  const hoisted = s.match(/"(?:filePath|command)"\s*:\s*"(?:[^"\\]|\\.)*"/);
+  if (hoisted) {
+    const head = hoisted[0].slice(0, 180);
+    const room = Math.max(0, INPUT_BOUND - head.length - 2);
+    const tail = room > 0 ? bound(s.replace(hoisted[0], " "), room) : "";
+    return `${head} … ${tail}`.slice(0, INPUT_BOUND);
+  }
   return bound(s, INPUT_BOUND);
 }
 

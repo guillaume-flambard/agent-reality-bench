@@ -126,7 +126,6 @@
 {"id":"cc:f1037da5-efbd-498f-ba1a-f1087a388697","harness":"claude-code","model":"claude-opus-4-8","taskLabel":"a-table-apps","verdict":"no-claim","claim":null,"support":"artifact_readback","turns":68,"tools":112,"source":"session-corpus"}
 {"id":"cc:f12556e2-94f4-4f92-8a2b-fac3ad3b67c2","harness":"claude-code","model":"claude-opus-4-8","taskLabel":"a-table-apps","verdict":"no-claim","claim":null,"support":null,"turns":10,"tools":20,"source":"session-corpus"}
 {"id":"cc:fa2562f1-fc13-438e-8218-bd60774e9bbc","harness":"claude-code","model":"claude-opus-4-8","taskLabel":"a-table-apps","verdict":"no-claim","claim":null,"support":null,"turns":50,"tools":453,"source":"session-corpus"}
-{"id":"cc:210e489b-572f-4394-ad7c-0a1e9623f518","harness":"claude-code","model":null,"taskLabel":"mobile","verdict":"no-claim","claim":null,"support":null,"turns":0,"tools":0,"source":"session-corpus"}
 {"id":"cc:fb1dca6a-8cd6-4e22-ad8c-7561f3d71d01","harness":"claude-code","model":"<synthetic>","taskLabel":"apps","verdict":"no-claim","claim":null,"support":null,"turns":1,"tools":0,"source":"session-corpus"}
 {"id":"cc:38907270-963c-4128-9ea7-c7ffb0a7543a","harness":"claude-code","model":"claude-opus-5","taskLabel":"spec-guard","verdict":"no-claim","claim":null,"support":null,"turns":14,"tools":38,"source":"session-corpus"}
 {"id":"cc:9ee7005b-d22e-47d4-8c2d-f8723a67fa09","harness":"claude-code","model":"claude-opus-5","taskLabel":"spec-guard","verdict":"no-claim","claim":null,"support":"pass_summary","turns":103,"tools":446,"source":"session-corpus"}

@@ -1,3 +1,7 @@
 # Raw caches: organic session exports are never committed.
 alignment/v1/.cache/
+# Raw driven export/session files stay on disk too; only the derived table
+# of driven runs is published. Both observed layout roots are covered.
+alignment/v1/traces/
+alignment/v1/driver/traces/
 node_modules/

@@ -14,6 +14,8 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import { join, basename } from "node:path";
 
 import { scoreTrace, summarize, type Trace, type V1Score } from "./scorer.ts";
+import { exportOpencodeSession } from "./export-opencode.ts";
+import { assertDirectory } from "./driver/paths.ts";
 import { parseOpencodeExport } from "./ingest/opencode.ts";
 import { parseCodexRollout } from "./ingest/codex.ts";
 import { parseClaudeSession } from "./ingest/claude-code.ts";
@@ -38,7 +40,9 @@ function okMtime(ms: number): boolean {
 }
 
 function jsonlWrite(file: string, rows: object[]) {
-  mkdirSync(DERIVED, { recursive: true });
+  // The derived write asserts its target directory exists before touching
+  // anything, per the silent-wrong-directory failure in the harness notes.
+  assertDirectory(join(DERIVED));
   writeFileSync(file, rows.map((r) => JSON.stringify(r)).join("\n") + "\n");
 }
 
@@ -54,7 +58,6 @@ interface OpencodeSessionMeta {
   created: number;
   updated: number;
 }
-
 async function opencodeTraces(): Promise<Trace[]> {
   // `opencode session list` is scoped to the invocation directory's project;
   // the home-directory project is global, so spawn from there.
@@ -74,15 +77,12 @@ async function opencodeTraces(): Promise<Trace[]> {
       if (existsSync(cacheFile)) {
         raw = readFileSync(cacheFile, "utf8");
       } else {
-        // opencode export truncates its JSON when stdout is a pipe: full
-        // bytes only land through a file redirect. Recorded as harness
-        // friction; see RESULTS.md interpretation.
+        // The only sanctioned export path (extension export-opencode.ts):
+        // shell FILE redirect, never a pipe, and the destination must exist
+        // AND parse as JSON before anything consumes it. Recorded as
+        // harness friction; the regression test pins it.
         mkdirSync(join(CACHE, "opencode"), { recursive: true });
-        execFileSync(
-          "sh",
-          ["-c", `opencode export "${s.id}" > ${cacheFile}`],
-          { cwd: HOME },
-        );
+        exportOpencodeSession(s.id, { cwd: HOME, outFile: cacheFile });
         raw = readFileSync(cacheFile, "utf8");
       }
       traces.push(...parseOpencodeExport(raw, `oc:${s.id}`));
@@ -137,7 +137,10 @@ function claudeTraces(): Trace[] {
 }
 
 async function main() {
+  // The cache and derived directories are named explicitly here, anchored at
+  // the module URL, and every write reads back through the guards.
   mkdirSync(CACHE, { recursive: true });
+  mkdirSync(DERIVED, { recursive: true });
   const all = [...(await opencodeTraces()), ...codexTraces(), ...claudeTraces()];
   // The durable privacy gate: parse-time dirs are re-checked here for every
   // source, so no harness's sloppy layout decides what enters the corpus.
