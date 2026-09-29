@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Measuring when an agent's knowledge, observations and actions stop describing the same reality.",
   "scripts": {
-    "test": "node --test \"alignment/v1/test/*.test.ts\""
+    "test": "node --test \"alignment/v1/test/*.test.ts\" \"alignment/e1/test/*.test.ts\""
   },
   "engines": {
     "node": ">=24"

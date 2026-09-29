@@ -4,4 +4,8 @@ alignment/v1/.cache/
 # of driven runs is published. Both observed layout roots are covered.
 alignment/v1/traces/
 alignment/v1/driver/traces/
+# Raw driven exports of the E1 case stay on disk; only the derived table is
+# published (same privacy rule as V1).
+alignment/e1/traces/
+alignment/e1/driver/traces/
 node_modules/

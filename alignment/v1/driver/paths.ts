@@ -16,21 +16,21 @@ import { existsSync, readFileSync, statSync, writeFileSync, mkdirSync } from "no
 import { dirname, resolve } from "node:path";
 
 /**
- * The v1 tree (alignment/v1) this module lives under; every write fans out
- * from here, anchored at import.meta.url so a wrong relative path can never
- * silently redirect derived output.
+ * The v1 tree (alignment/v1) this module lives under; the default guarded
+ * root every write fans out from, anchored at import.meta.url so a wrong
+ * relative path can never silently redirect derived output. Callers from
+ * other case trees (E1) pass their own root; the default keeps v1 behavior.
  */
 export function v1Root(): string {
   return new URL("..", import.meta.url).pathname;
 }
 
-/** Assert a directory exists, is a directory, and sits inside the v1 tree. */
-export function assertDirectory(dir: string): void {
+/** Assert a directory exists, is a directory, and sits inside the guarded root. */
+export function assertDirectory(dir: string, root: string = v1Root()): void {
   const abs = resolve(dir);
-  const root = v1Root();
   if (!abs.startsWith(root)) {
     throw new Error(
-      `write-guard: ${abs} resolves outside the v1 tree ${root}; this is the silent-wrong-directory failure, refusing to write`,
+      `write-guard: ${abs} resolves outside the guarded tree ${root}; this is the silent-wrong-directory failure, refusing to write`,
     );
   }
   if (!existsSync(abs)) {
@@ -46,13 +46,13 @@ export function assertDirectory(dir: string): void {
  * the containing directory, asserts it exists inside the v1 tree, writes,
  * and reads the file back non-empty before returning.
  */
-export function writeGuarded(file: string, content: string): void {
+export function writeGuarded(file: string, content: string, root: string = v1Root()): void {
   const abs = resolve(file);
   const dir = dirname(abs);
   // Explicit mkdir of the path we intend, not an incidental CWD-dependent
   // side effect: a wrong relative path would otherwise land silently.
   mkdirSync(dir, { recursive: true });
-  assertDirectory(dir);
+  assertDirectory(dir, root);
   writeFileSync(file, content);
   if (!existsSync(abs) || statSync(abs).size === 0) {
     throw new Error(`write-guard: ${abs} did not survive its own write`);

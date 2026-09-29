@@ -60,7 +60,7 @@ export function statusOf(status?: string): ToolStatus {
  * filePath/command key to the head before bounding: truncation may drop
  * payload text, never the identity of the file or command the tool acted on.
  */
-export function inputExcerpt(input: unknown): string | null {
+export function inputExcerpt(input: unknown, inputBound: number = INPUT_BOUND): string | null {
   if (input == null) return null;
   let s: string;
   try {
@@ -72,15 +72,20 @@ export function inputExcerpt(input: unknown): string | null {
   const hoisted = s.match(/"(?:filePath|command)"\s*:\s*"(?:[^"\\]|\\.)*"/);
   if (hoisted) {
     const head = hoisted[0].slice(0, 180);
-    const room = Math.max(0, INPUT_BOUND - head.length - 2);
+    const room = Math.max(0, inputBound - head.length - 2);
     const tail = room > 0 ? bound(s.replace(hoisted[0], " "), room) : "";
-    return `${head} … ${tail}`.slice(0, INPUT_BOUND);
+    return `${head} … ${tail}`.slice(0, inputBound);
   }
-  return bound(s, INPUT_BOUND);
+  return bound(s, inputBound);
 }
 
-export function parseOpencodeExport(raw: string, idHint: string): Trace[] {
+export function parseOpencodeExport(
+  raw: string,
+  idHint: string,
+  opts: { inputBound?: number } = {},
+): Trace[] {
   const data: OpencodeExport = JSON.parse(raw);
+  const inputBound = opts.inputBound ?? INPUT_BOUND;
   const events: TraceItem[] = [];
   for (const msg of data.messages ?? []) {
     const role = msg.info?.role ?? "?";
@@ -98,7 +103,7 @@ export function parseOpencodeExport(raw: string, idHint: string): Trace[] {
           text: bound(st.output ?? st.error ?? "", TEXT_BOUND),
           exit: st.metadata?.exit ?? null,
           status: statusOf(st.status),
-          input: inputExcerpt(st.input),
+          input: inputExcerpt(st.input, inputBound),
         });
       }
     }

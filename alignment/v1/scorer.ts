@@ -136,8 +136,8 @@ export function isVerifyShaped(input: string | null): boolean {
   return bare.split(/(?:;|&&|\|\||\n|\$?\()/).some(segmentIsVerify);
 }
 
-/** Tools that execute commands; only they can "run the tests". */
-const RUN_RE =
+/** Tools that execute commands; only they can "run the tests". Shared with the E1 scorer. */
+export const RUN_RE =
   /^(?:bash|sh|zsh|fish|exec|exec_command|run|command|cmd|terminal|shell|shell_command|powershell)$/i;
 
 /** Tools whose result shows file or state content, not a command run. */
@@ -146,8 +146,8 @@ const INSPECT_RE =
 
 /** Tools whose result shows an artifact's content. */
 const READ_RE = /^(?:read|cat|view|open|head|tail)$/i;
-/** Tools that place an artifact on disk. */
-const WRITE_RE =
+/** Tools that place an artifact on disk. Shared with the E1 scorer. */
+export const WRITE_RE =
   /^(?:write|edit|save|create|mkdir|move|move_file|copy|copy_file|patch|apply_patch)$/i;
 
 const OPENCODE_PATH_RE = /<path>([^<\n]+)<\/path>/;

@@ -110,7 +110,7 @@ appeared in 248 real traces.
 ### Reproducibility
 
 ```sh
-npm test                                   # 56 tests, fixtures plus ingest, organic and driver guards
+npm test                                   # 87 tests: v1 fixtures plus ingest, organic and driver guards, plus the e1 case suite
 node alignment/v1/run-organic.ts           # rebuilds derived/organic-derived.jsonl
 node alignment/v1/verify-organic.ts        # prints every scored organic trace beside its raw events
 node alignment/v1/driver/run-paired.ts     # 6 fresh driven pairs, headless OpenCode

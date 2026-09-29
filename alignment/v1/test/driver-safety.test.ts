@@ -50,7 +50,21 @@ describe("regression: a wrong relative path silently wrote derived output outsid
 
   it("assertDirectory refuses a sibling directory of the v1 tree as a derived target", () => {
     // One level above the v1 tree: exactly the silent-wrong-directory shape.
-    assert.throws(() => assertDirectory("/Users/memo/projects/infrastructure"), /outside the v1 tree/);
+    assert.throws(() => assertDirectory("/Users/memo/projects/infrastructure"), /outside the guarded tree/);
+  });
+
+  it("writeGuarded honors a caller-supplied guarded root (the E1 case writes under alignment/e1)", () => {
+    // The root parameter exists so a sibling case tree can guard its own
+    // writes; the default remains the v1 tree.
+    const e1 = join(v1Root(), "..", "e1");
+    const dir = join(e1, "driver", ".guard-scratch-e1");
+    try {
+      writeGuarded(join(dir, "ok.json"), '{"n":1}', e1 + "/");
+      assert.ok(existsSync(join(dir, "ok.json")));
+      assert.throws(() => writeGuarded(join(dir, "no.json"), "{}", v1Root()), /refusing to write/);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
   });
 
   it("writeGuarded ensures its named directory exists before the first write and round-trips content", () => {
