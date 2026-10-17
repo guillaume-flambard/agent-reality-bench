@@ -1,0 +1,3628 @@
+{
+  "case": "skl-01",
+  "generated": "2026-10-17T17:52:24.111Z",
+  "property": "a capability that appeared after the session started is resolvable at delegation time",
+  "source": {
+    "spool": "/Users/memo/.local/share/opencode/cuesheet/shadow.ndjson",
+    "sha256": "b9fc646ff35cda8895a1427c9b6c0036464297fe12483105b0e9e5f404775c87",
+    "lines": 1075,
+    "malformed": 0,
+    "firstTs": "2026-09-29T15:00:49.266Z",
+    "lastTs": "2026-10-17T17:43:08.153Z"
+  },
+  "records": {
+    "total": 1075,
+    "real": 1074,
+    "probe": 1,
+    "instrumentFailure": 639,
+    "evaluated": 435
+  },
+  "verdicts": {
+    "allowed": 435,
+    "unverified": 639,
+    "would_block": 1
+  },
+  "realTraffic": {
+    "sessions": 291,
+    "multiRecordSessions": 56,
+    "growthSessions": 2
+  },
+  "coverage": {
+    "realRecordsEvaluated": 435,
+    "realRecordsWithRequirement": 0
+  },
+  "instrumentGap": {
+    "from": "2026-09-30T09:04:33.499Z",
+    "to": "2026-10-09T14:21:18.846Z",
+    "count": 639,
+    "reasons": [
+      {
+        "reason": "evaluation failed: available.every is not a function. (In 'available.every((c) => c.version === \"unverified\")', 'available.every' is undefined)",
+        "count": 637
+      },
+      {
+        "reason": "core not loadable: ResolveMessage: Cannot find module '/Users/memo/projects/tools/cuesheet/src/core/capability.ts' from '/Users/memo/.config/opencode/plugin/cuesheet-shadow.ts'",
+        "count": 2
+      }
+    ]
+  },
+  "growth": [
+    {
+      "digest": "057837c052",
+      "records": 8,
+      "sizes": [
+        226,
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T20:25:08.964Z",
+      "last": "2026-10-09T21:29:44.136Z",
+      "growth": true
+    },
+    {
+      "digest": "5b4387b549",
+      "records": 7,
+      "sizes": [
+        226,
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T21:28:23.820Z",
+      "last": "2026-10-10T10:29:13.547Z",
+      "growth": true
+    }
+  ],
+  "sessions": [
+    {
+      "digest": "18f9f36ab0",
+      "records": 133,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed",
+        "unverified"
+      ],
+      "first": "2026-09-29T18:54:28.409Z",
+      "last": "2026-09-30T22:58:14.704Z",
+      "growth": false
+    },
+    {
+      "digest": "bd13835f3e",
+      "records": 75,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed",
+        "unverified"
+      ],
+      "first": "2026-09-29T19:12:18.142Z",
+      "last": "2026-09-30T21:49:50.253Z",
+      "growth": false
+    },
+    {
+      "digest": "867719bf8f",
+      "records": 64,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T09:15:07.981Z",
+      "last": "2026-09-30T19:17:05.862Z",
+      "growth": false
+    },
+    {
+      "digest": "aa7b559e3f",
+      "records": 40,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T07:22:49.288Z",
+      "last": "2026-10-02T18:01:36.637Z",
+      "growth": false
+    },
+    {
+      "digest": "8f7410cfa0",
+      "records": 33,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-14T11:59:14.603Z",
+      "last": "2026-10-14T14:50:55.026Z",
+      "growth": false
+    },
+    {
+      "digest": "44bdc2360d",
+      "records": 30,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T09:31:49.088Z",
+      "last": "2026-10-02T14:14:59.599Z",
+      "growth": false
+    },
+    {
+      "digest": "3890b5ed28",
+      "records": 27,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T08:48:45.016Z",
+      "last": "2026-10-01T12:24:34.280Z",
+      "growth": false
+    },
+    {
+      "digest": "59c5d9409c",
+      "records": 25,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T14:02:29.590Z",
+      "last": "2026-10-09T15:14:34.634Z",
+      "growth": false
+    },
+    {
+      "digest": "45c13a7446",
+      "records": 24,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T06:53:52.232Z",
+      "last": "2026-10-12T10:18:12.962Z",
+      "growth": false
+    },
+    {
+      "digest": "e865e42ff9",
+      "records": 23,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T15:43:17.525Z",
+      "last": "2026-09-30T21:46:04.864Z",
+      "growth": false
+    },
+    {
+      "digest": "345309e258",
+      "records": 21,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T10:19:19.599Z",
+      "last": "2026-10-12T14:15:31.984Z",
+      "growth": false
+    },
+    {
+      "digest": "68776db3b3",
+      "records": 19,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T21:58:34.742Z",
+      "last": "2026-10-02T22:44:38.243Z",
+      "growth": false
+    },
+    {
+      "digest": "1fd547cef9",
+      "records": 17,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T09:04:33.499Z",
+      "last": "2026-09-30T11:57:51.159Z",
+      "growth": false
+    },
+    {
+      "digest": "87b189635f",
+      "records": 16,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T16:19:43.326Z",
+      "last": "2026-10-02T17:45:43.162Z",
+      "growth": false
+    },
+    {
+      "digest": "3c78554d95",
+      "records": 14,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-03T07:13:19.339Z",
+      "last": "2026-10-03T08:15:03.881Z",
+      "growth": false
+    },
+    {
+      "digest": "d0497253ee",
+      "records": 14,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T09:36:20.655Z",
+      "last": "2026-10-06T10:37:47.095Z",
+      "growth": false
+    },
+    {
+      "digest": "37a1db8563",
+      "records": 13,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T15:26:38.149Z",
+      "last": "2026-10-11T16:56:18.430Z",
+      "growth": false
+    },
+    {
+      "digest": "6e62526181",
+      "records": 13,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T11:23:25.068Z",
+      "last": "2026-10-05T18:17:14.744Z",
+      "growth": false
+    },
+    {
+      "digest": "0dd6091b89",
+      "records": 12,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T10:05:27.909Z",
+      "last": "2026-10-16T13:51:14.497Z",
+      "growth": false
+    },
+    {
+      "digest": "eaadb97dc8",
+      "records": 12,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T08:52:57.686Z",
+      "last": "2026-10-06T10:30:22.677Z",
+      "growth": false
+    },
+    {
+      "digest": "1910df5f50",
+      "records": 11,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T18:20:38.855Z",
+      "last": "2026-10-06T08:40:09.334Z",
+      "growth": false
+    },
+    {
+      "digest": "430ceee1b8",
+      "records": 11,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T13:57:45.132Z",
+      "last": "2026-10-02T15:39:40.802Z",
+      "growth": false
+    },
+    {
+      "digest": "86b24d16c0",
+      "records": 11,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T06:43:21.444Z",
+      "last": "2026-10-01T10:09:48.002Z",
+      "growth": false
+    },
+    {
+      "digest": "df322d181a",
+      "records": 10,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-17T08:35:49.655Z",
+      "last": "2026-10-17T16:49:00.051Z",
+      "growth": false
+    },
+    {
+      "digest": "f5186cdad8",
+      "records": 10,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T14:00:10.039Z",
+      "last": "2026-10-02T14:55:50.324Z",
+      "growth": false
+    },
+    {
+      "digest": "9063f3f33d",
+      "records": 9,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-17T16:52:36.207Z",
+      "last": "2026-10-17T17:43:08.153Z",
+      "growth": false
+    },
+    {
+      "digest": "9aacf3ed67",
+      "records": 9,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T18:34:36.620Z",
+      "last": "2026-10-11T23:08:49.966Z",
+      "growth": false
+    },
+    {
+      "digest": "a03b918c8e",
+      "records": 9,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T17:49:56.723Z",
+      "last": "2026-10-05T18:14:14.226Z",
+      "growth": false
+    },
+    {
+      "digest": "aeca9a1751",
+      "records": 9,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T11:41:15.119Z",
+      "last": "2026-10-12T13:50:11.694Z",
+      "growth": false
+    },
+    {
+      "digest": "057837c052",
+      "records": 8,
+      "sizes": [
+        226,
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T20:25:08.964Z",
+      "last": "2026-10-09T21:29:44.136Z",
+      "growth": true
+    },
+    {
+      "digest": "d4ef8ada8c",
+      "records": 8,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T09:24:45.444Z",
+      "last": "2026-10-04T10:53:35.822Z",
+      "growth": false
+    },
+    {
+      "digest": "f6c9f75168",
+      "records": 8,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T19:48:14.717Z",
+      "last": "2026-10-05T21:56:19.497Z",
+      "growth": false
+    },
+    {
+      "digest": "38992e3062",
+      "records": 7,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T14:36:27.758Z",
+      "last": "2026-10-16T15:52:28.518Z",
+      "growth": false
+    },
+    {
+      "digest": "5b4387b549",
+      "records": 7,
+      "sizes": [
+        226,
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T21:28:23.820Z",
+      "last": "2026-10-10T10:29:13.547Z",
+      "growth": true
+    },
+    {
+      "digest": "7c51e70cd8",
+      "records": 7,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T10:22:09.361Z",
+      "last": "2026-10-04T10:43:20.383Z",
+      "growth": false
+    },
+    {
+      "digest": "d2b798dab8",
+      "records": 7,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T17:41:15.700Z",
+      "last": "2026-10-02T21:57:53.583Z",
+      "growth": false
+    },
+    {
+      "digest": "2bf15968e6",
+      "records": 6,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T06:55:47.978Z",
+      "last": "2026-10-01T09:53:09.268Z",
+      "growth": false
+    },
+    {
+      "digest": "8502840d8a",
+      "records": 6,
+      "sizes": [
+        237
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T17:14:00.776Z",
+      "last": "2026-10-10T17:37:05.303Z",
+      "growth": false
+    },
+    {
+      "digest": "8cf79ab54d",
+      "records": 6,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T07:47:22.185Z",
+      "last": "2026-10-02T07:56:11.532Z",
+      "growth": false
+    },
+    {
+      "digest": "0c41ca9414",
+      "records": 5,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T08:43:13.995Z",
+      "last": "2026-10-06T10:27:36.361Z",
+      "growth": false
+    },
+    {
+      "digest": "1fa03572c9",
+      "records": 5,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-09T12:30:19.369Z",
+      "last": "2026-10-09T14:21:18.846Z",
+      "growth": false
+    },
+    {
+      "digest": "512b7d40f9",
+      "records": 5,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:52:03.843Z",
+      "last": "2026-10-12T14:56:03.496Z",
+      "growth": false
+    },
+    {
+      "digest": "ade93febf5",
+      "records": 5,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T09:14:01.312Z",
+      "last": "2026-10-01T10:48:17.844Z",
+      "growth": false
+    },
+    {
+      "digest": "1a1836dbd1",
+      "records": 4,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T10:25:36.955Z",
+      "last": "2026-10-04T10:52:51.535Z",
+      "growth": false
+    },
+    {
+      "digest": "2db45ecf04",
+      "records": 4,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T09:39:28.620Z",
+      "last": "2026-10-05T09:44:15.078Z",
+      "growth": false
+    },
+    {
+      "digest": "4476d115d5",
+      "records": 4,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T08:09:36.291Z",
+      "last": "2026-10-02T09:12:32.055Z",
+      "growth": false
+    },
+    {
+      "digest": "b3df06feff",
+      "records": 4,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-03T08:35:51.282Z",
+      "last": "2026-10-03T09:02:24.777Z",
+      "growth": false
+    },
+    {
+      "digest": "af737c9d41",
+      "records": 3,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T11:17:26.278Z",
+      "last": "2026-10-13T11:20:36.157Z",
+      "growth": false
+    },
+    {
+      "digest": "24fec5bed7",
+      "records": 2,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-03T08:49:11.402Z",
+      "last": "2026-10-03T08:53:05.221Z",
+      "growth": false
+    },
+    {
+      "digest": "3084db2ee5",
+      "records": 2,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T06:52:10.007Z",
+      "last": "2026-10-12T06:52:24.266Z",
+      "growth": false
+    },
+    {
+      "digest": "4eb7671ef7",
+      "records": 2,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T09:49:10.350Z",
+      "last": "2026-10-12T09:55:12.012Z",
+      "growth": false
+    },
+    {
+      "digest": "8be3c9f049",
+      "records": 2,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T07:24:49.938Z",
+      "last": "2026-10-01T07:31:11.912Z",
+      "growth": false
+    },
+    {
+      "digest": "9e8c931109",
+      "records": 2,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T09:07:49.937Z",
+      "last": "2026-10-05T10:03:55.968Z",
+      "growth": false
+    },
+    {
+      "digest": "f0aa1c6889",
+      "records": 2,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T15:13:39.318Z",
+      "last": "2026-10-02T15:35:36.364Z",
+      "growth": false
+    },
+    {
+      "digest": "fa23e3272b",
+      "records": 2,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T12:19:44.541Z",
+      "last": "2026-10-04T12:30:04.324Z",
+      "growth": false
+    },
+    {
+      "digest": "fd26893746",
+      "records": 2,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T10:16:07.529Z",
+      "last": "2026-10-04T10:24:51.299Z",
+      "growth": false
+    },
+    {
+      "digest": "00f2753e35",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T17:32:47.485Z",
+      "last": "2026-10-11T17:32:47.485Z",
+      "growth": false
+    },
+    {
+      "digest": "022ad8d4a2",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:37:51.720Z",
+      "last": "2026-10-10T12:37:51.720Z",
+      "growth": false
+    },
+    {
+      "digest": "02c012f4bc",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T19:26:00.152Z",
+      "last": "2026-09-30T19:26:00.152Z",
+      "growth": false
+    },
+    {
+      "digest": "04f7ff9d01",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T16:46:16.862Z",
+      "last": "2026-09-30T16:46:16.862Z",
+      "growth": false
+    },
+    {
+      "digest": "0788a6d045",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T21:57:05.542Z",
+      "last": "2026-10-05T21:57:05.542Z",
+      "growth": false
+    },
+    {
+      "digest": "07c1269798",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T08:08:16.585Z",
+      "last": "2026-10-13T08:08:16.585Z",
+      "growth": false
+    },
+    {
+      "digest": "085979f091",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:31:54.268Z",
+      "last": "2026-10-10T12:31:54.268Z",
+      "growth": false
+    },
+    {
+      "digest": "08e17766b5",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:56:22.693Z",
+      "last": "2026-10-10T12:56:22.693Z",
+      "growth": false
+    },
+    {
+      "digest": "08ea834814",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:37:35.346Z",
+      "last": "2026-10-13T15:37:35.346Z",
+      "growth": false
+    },
+    {
+      "digest": "09566fb94d",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T14:42:30.161Z",
+      "last": "2026-09-30T14:42:30.161Z",
+      "growth": false
+    },
+    {
+      "digest": "0a71b821f3",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T10:14:59.965Z",
+      "last": "2026-10-16T10:14:59.965Z",
+      "growth": false
+    },
+    {
+      "digest": "0a7d0b6357",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:12:44.529Z",
+      "last": "2026-10-06T15:12:44.529Z",
+      "growth": false
+    },
+    {
+      "digest": "0c233d10fe",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:00:21.159Z",
+      "last": "2026-10-12T14:00:21.159Z",
+      "growth": false
+    },
+    {
+      "digest": "0c4c294751",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:05:21.132Z",
+      "last": "2026-10-02T10:05:21.132Z",
+      "growth": false
+    },
+    {
+      "digest": "0c95bd3991",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T19:21:42.375Z",
+      "last": "2026-09-30T19:21:42.375Z",
+      "growth": false
+    },
+    {
+      "digest": "0f8d1ca1e7",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:39:13.397Z",
+      "last": "2026-10-02T10:39:13.397Z",
+      "growth": false
+    },
+    {
+      "digest": "119fb31c83",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T08:48:41.523Z",
+      "last": "2026-10-01T08:48:41.523Z",
+      "growth": false
+    },
+    {
+      "digest": "12af7dd753",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:37:17.629Z",
+      "last": "2026-10-13T15:37:17.629Z",
+      "growth": false
+    },
+    {
+      "digest": "13cdde53d9",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T18:30:09.766Z",
+      "last": "2026-10-05T18:30:09.766Z",
+      "growth": false
+    },
+    {
+      "digest": "1462b93e4e",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:17:14.541Z",
+      "last": "2026-10-06T15:17:14.541Z",
+      "growth": false
+    },
+    {
+      "digest": "146f3f1ad3",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-03T07:11:17.350Z",
+      "last": "2026-10-03T07:11:17.350Z",
+      "growth": false
+    },
+    {
+      "digest": "15686ccf9a",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:29:33.453Z",
+      "last": "2026-10-10T12:29:33.453Z",
+      "growth": false
+    },
+    {
+      "digest": "169977de5e",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T07:52:41.872Z",
+      "last": "2026-10-02T07:52:41.872Z",
+      "growth": false
+    },
+    {
+      "digest": "1763110215",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:09:04.931Z",
+      "last": "2026-10-06T15:09:04.931Z",
+      "growth": false
+    },
+    {
+      "digest": "17cd29bddb",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T14:45:10.908Z",
+      "last": "2026-09-30T14:45:10.908Z",
+      "growth": false
+    },
+    {
+      "digest": "187e2bf14a",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:46:21.643Z",
+      "last": "2026-10-10T12:46:21.643Z",
+      "growth": false
+    },
+    {
+      "digest": "1890734499",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:41:28.692Z",
+      "last": "2026-10-10T12:41:28.692Z",
+      "growth": false
+    },
+    {
+      "digest": "1946332dbd",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T14:45:10.920Z",
+      "last": "2026-09-30T14:45:10.920Z",
+      "growth": false
+    },
+    {
+      "digest": "1aac7bc5fd",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T09:43:16.116Z",
+      "last": "2026-10-01T09:43:16.116Z",
+      "growth": false
+    },
+    {
+      "digest": "1bf2826dd5",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T21:42:53.880Z",
+      "last": "2026-09-29T21:42:53.880Z",
+      "growth": false
+    },
+    {
+      "digest": "1e084242a9",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T12:29:09.972Z",
+      "last": "2026-09-30T12:29:09.972Z",
+      "growth": false
+    },
+    {
+      "digest": "1e0b43e7c1",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:05:39.974Z",
+      "last": "2026-10-02T10:05:39.974Z",
+      "growth": false
+    },
+    {
+      "digest": "1e9ca0e894",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:36:19.121Z",
+      "last": "2026-10-10T12:36:19.121Z",
+      "growth": false
+    },
+    {
+      "digest": "1fb83fedfb",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T12:23:12.856Z",
+      "last": "2026-10-02T12:23:12.856Z",
+      "growth": false
+    },
+    {
+      "digest": "2199881cf7",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:43:52.592Z",
+      "last": "2026-10-09T13:43:52.592Z",
+      "growth": false
+    },
+    {
+      "digest": "21dd79d823",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T07:52:29.907Z",
+      "last": "2026-10-01T07:52:29.907Z",
+      "growth": false
+    },
+    {
+      "digest": "2273229711",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:46:02.244Z",
+      "last": "2026-10-10T12:46:02.244Z",
+      "growth": false
+    },
+    {
+      "digest": "23d52aca4c",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:39:52.240Z",
+      "last": "2026-10-09T13:39:52.240Z",
+      "growth": false
+    },
+    {
+      "digest": "2595b622ad",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T14:34:11.529Z",
+      "last": "2026-10-02T14:34:11.529Z",
+      "growth": false
+    },
+    {
+      "digest": "27090a97c5",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T10:15:37.331Z",
+      "last": "2026-10-12T10:15:37.331Z",
+      "growth": false
+    },
+    {
+      "digest": "2854ca76cf",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T13:58:57.789Z",
+      "last": "2026-10-12T13:58:57.789Z",
+      "growth": false
+    },
+    {
+      "digest": "28ae417ddc",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:56:16.606Z",
+      "last": "2026-10-10T12:56:16.606Z",
+      "growth": false
+    },
+    {
+      "digest": "29299e6b49",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T14:22:57.262Z",
+      "last": "2026-10-11T14:22:57.262Z",
+      "growth": false
+    },
+    {
+      "digest": "2aa7607c6a",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:44:10.100Z",
+      "last": "2026-10-13T10:44:10.100Z",
+      "growth": false
+    },
+    {
+      "digest": "2bd329cd1e",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:41:40.909Z",
+      "last": "2026-10-10T12:41:40.909Z",
+      "growth": false
+    },
+    {
+      "digest": "2d4c981af2",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T10:06:50.324Z",
+      "last": "2026-10-05T10:06:50.324Z",
+      "growth": false
+    },
+    {
+      "digest": "2d62cfb6c5",
+      "records": 1,
+      "sizes": [
+        237
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T17:21:41.834Z",
+      "last": "2026-10-10T17:21:41.834Z",
+      "growth": false
+    },
+    {
+      "digest": "2ff5884701",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-07T11:49:25.918Z",
+      "last": "2026-10-07T11:49:25.918Z",
+      "growth": false
+    },
+    {
+      "digest": "322cdfa2a4",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:40:11.700Z",
+      "last": "2026-10-10T12:40:11.700Z",
+      "growth": false
+    },
+    {
+      "digest": "33c18e8972",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T07:05:08.140Z",
+      "last": "2026-10-01T07:05:08.140Z",
+      "growth": false
+    },
+    {
+      "digest": "357af05d44",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T10:19:52.341Z",
+      "last": "2026-10-16T10:19:52.341Z",
+      "growth": false
+    },
+    {
+      "digest": "3589ef726a",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:00:17.776Z",
+      "last": "2026-10-12T14:00:17.776Z",
+      "growth": false
+    },
+    {
+      "digest": "359425baa5",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T08:02:04.719Z",
+      "last": "2026-10-01T08:02:04.719Z",
+      "growth": false
+    },
+    {
+      "digest": "36df84d7dc",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T09:57:07.612Z",
+      "last": "2026-10-01T09:57:07.612Z",
+      "growth": false
+    },
+    {
+      "digest": "39be5ba853",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T09:06:30.290Z",
+      "last": "2026-10-02T09:06:30.290Z",
+      "growth": false
+    },
+    {
+      "digest": "3a51a139fb",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T22:42:38.857Z",
+      "last": "2026-10-02T22:42:38.857Z",
+      "growth": false
+    },
+    {
+      "digest": "3a69ade633",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:05:44.217Z",
+      "last": "2026-09-29T15:05:44.217Z",
+      "growth": false
+    },
+    {
+      "digest": "3b4b32cd4d",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:35:03.368Z",
+      "last": "2026-10-10T12:35:03.368Z",
+      "growth": false
+    },
+    {
+      "digest": "3c7997304e",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:39:10.603Z",
+      "last": "2026-10-13T15:39:10.603Z",
+      "growth": false
+    },
+    {
+      "digest": "3cc194e462",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T13:47:33.634Z",
+      "last": "2026-09-30T13:47:33.634Z",
+      "growth": false
+    },
+    {
+      "digest": "3cc2c53b8c",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:43:36.258Z",
+      "last": "2026-10-13T15:43:36.258Z",
+      "growth": false
+    },
+    {
+      "digest": "3d13987a7b",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:16:54.657Z",
+      "last": "2026-10-06T15:16:54.657Z",
+      "growth": false
+    },
+    {
+      "digest": "3e53556aa9",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:37:01.100Z",
+      "last": "2026-10-13T15:37:01.100Z",
+      "growth": false
+    },
+    {
+      "digest": "3e741e2e96",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T14:42:30.159Z",
+      "last": "2026-09-30T14:42:30.159Z",
+      "growth": false
+    },
+    {
+      "digest": "3f72d6799c",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:15:38.367Z",
+      "last": "2026-10-06T15:15:38.367Z",
+      "growth": false
+    },
+    {
+      "digest": "3fa87a3770",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-03T07:11:14.324Z",
+      "last": "2026-10-03T07:11:14.324Z",
+      "growth": false
+    },
+    {
+      "digest": "3fae8f7be6",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:11:01.021Z",
+      "last": "2026-10-12T14:11:01.021Z",
+      "growth": false
+    },
+    {
+      "digest": "419f80c68b",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:42:21.830Z",
+      "last": "2026-10-13T15:42:21.830Z",
+      "growth": false
+    },
+    {
+      "digest": "4292a48815",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T08:35:00.025Z",
+      "last": "2026-10-01T08:35:00.025Z",
+      "growth": false
+    },
+    {
+      "digest": "42f3eb27aa",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T08:01:20.338Z",
+      "last": "2026-10-01T08:01:20.338Z",
+      "growth": false
+    },
+    {
+      "digest": "434296971c",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:29:43.386Z",
+      "last": "2026-10-13T10:29:43.386Z",
+      "growth": false
+    },
+    {
+      "digest": "44923a0652",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:39:13.448Z",
+      "last": "2026-10-02T10:39:13.448Z",
+      "growth": false
+    },
+    {
+      "digest": "44e40e1bba",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T10:47:19.073Z",
+      "last": "2026-10-04T10:47:19.073Z",
+      "growth": false
+    },
+    {
+      "digest": "45860012a6",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T12:29:10.175Z",
+      "last": "2026-09-30T12:29:10.175Z",
+      "growth": false
+    },
+    {
+      "digest": "46ac7685eb",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:39:28.398Z",
+      "last": "2026-10-10T12:39:28.398Z",
+      "growth": false
+    },
+    {
+      "digest": "46f8a7389d",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:32:56.248Z",
+      "last": "2026-10-13T10:32:56.248Z",
+      "growth": false
+    },
+    {
+      "digest": "4855dab0cb",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:39:35.422Z",
+      "last": "2026-10-10T12:39:35.422Z",
+      "growth": false
+    },
+    {
+      "digest": "487e87b067",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T09:51:31.221Z",
+      "last": "2026-10-01T09:51:31.221Z",
+      "growth": false
+    },
+    {
+      "digest": "4af8757543",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:15:28.880Z",
+      "last": "2026-10-06T15:15:28.880Z",
+      "growth": false
+    },
+    {
+      "digest": "4d69cf33ba",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:33:57.571Z",
+      "last": "2026-10-10T12:33:57.571Z",
+      "growth": false
+    },
+    {
+      "digest": "4e6f6ed032",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:39:48.847Z",
+      "last": "2026-10-13T15:39:48.847Z",
+      "growth": false
+    },
+    {
+      "digest": "4e6fa41eb1",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:31:59.989Z",
+      "last": "2026-10-10T12:31:59.989Z",
+      "growth": false
+    },
+    {
+      "digest": "4f18003607",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T08:09:11.966Z",
+      "last": "2026-10-13T08:09:11.966Z",
+      "growth": false
+    },
+    {
+      "digest": "4fa572ddc7",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:17:50.785Z",
+      "last": "2026-10-06T15:17:50.785Z",
+      "growth": false
+    },
+    {
+      "digest": "4fb8e1f385",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:40:59.001Z",
+      "last": "2026-10-13T15:40:59.001Z",
+      "growth": false
+    },
+    {
+      "digest": "51928916c2",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:01:49.247Z",
+      "last": "2026-10-12T14:01:49.247Z",
+      "growth": false
+    },
+    {
+      "digest": "527a281237",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:27:47.573Z",
+      "last": "2026-10-13T10:27:47.573Z",
+      "growth": false
+    },
+    {
+      "digest": "54ed3ff33f",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:44:28.613Z",
+      "last": "2026-10-09T13:44:28.613Z",
+      "growth": false
+    },
+    {
+      "digest": "55cb034474",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:03:47.138Z",
+      "last": "2026-09-29T15:03:47.138Z",
+      "growth": false
+    },
+    {
+      "digest": "56cd307f91",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:04:31.763Z",
+      "last": "2026-09-29T15:04:31.763Z",
+      "growth": false
+    },
+    {
+      "digest": "5942bed5d4",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T10:30:07.553Z",
+      "last": "2026-10-01T10:30:07.553Z",
+      "growth": false
+    },
+    {
+      "digest": "5a5cfc0172",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T10:25:17.579Z",
+      "last": "2026-10-16T10:25:17.579Z",
+      "growth": false
+    },
+    {
+      "digest": "5a89f0c70f",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:41:13.211Z",
+      "last": "2026-10-13T10:41:13.211Z",
+      "growth": false
+    },
+    {
+      "digest": "5ac7c39016",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T07:52:41.885Z",
+      "last": "2026-10-02T07:52:41.885Z",
+      "growth": false
+    },
+    {
+      "digest": "5bc70e8a0e",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:11:33.583Z",
+      "last": "2026-10-06T15:11:33.583Z",
+      "growth": false
+    },
+    {
+      "digest": "5db6151e10",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:33:34.887Z",
+      "last": "2026-10-10T12:33:34.887Z",
+      "growth": false
+    },
+    {
+      "digest": "6042b46773",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:41:08.145Z",
+      "last": "2026-10-10T12:41:08.145Z",
+      "growth": false
+    },
+    {
+      "digest": "6053af772b",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:49:56.387Z",
+      "last": "2026-10-09T13:49:56.387Z",
+      "growth": false
+    },
+    {
+      "digest": "6067742ccb",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T21:26:56.286Z",
+      "last": "2026-09-30T21:26:56.286Z",
+      "growth": false
+    },
+    {
+      "digest": "60ff1134ac",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:38:36.167Z",
+      "last": "2026-10-10T12:38:36.167Z",
+      "growth": false
+    },
+    {
+      "digest": "62450a5f1f",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:39:13.375Z",
+      "last": "2026-10-02T10:39:13.375Z",
+      "growth": false
+    },
+    {
+      "digest": "629aca9bd4",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T09:43:48.777Z",
+      "last": "2026-10-01T09:43:48.777Z",
+      "growth": false
+    },
+    {
+      "digest": "6737b5402a",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T14:06:02.547Z",
+      "last": "2026-10-09T14:06:02.547Z",
+      "growth": false
+    },
+    {
+      "digest": "69656ee942",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:39:27.217Z",
+      "last": "2026-10-10T12:39:27.217Z",
+      "growth": false
+    },
+    {
+      "digest": "69b8ba01a2",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:39:13.427Z",
+      "last": "2026-10-02T10:39:13.427Z",
+      "growth": false
+    },
+    {
+      "digest": "69ecfc2859",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:42:21.502Z",
+      "last": "2026-10-10T12:42:21.502Z",
+      "growth": false
+    },
+    {
+      "digest": "6a477f9847",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:05:53.312Z",
+      "last": "2026-10-02T10:05:53.312Z",
+      "growth": false
+    },
+    {
+      "digest": "6b98059311",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:42:24.576Z",
+      "last": "2026-10-09T13:42:24.576Z",
+      "growth": false
+    },
+    {
+      "digest": "6b9d4d2405",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:05:27.700Z",
+      "last": "2026-10-02T10:05:27.700Z",
+      "growth": false
+    },
+    {
+      "digest": "6e19369536",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T17:37:56.490Z",
+      "last": "2026-09-30T17:37:56.490Z",
+      "growth": false
+    },
+    {
+      "digest": "6f00a1bf72",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T11:27:57.995Z",
+      "last": "2026-10-01T11:27:57.995Z",
+      "growth": false
+    },
+    {
+      "digest": "6f30cec629",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T17:49:40.578Z",
+      "last": "2026-10-11T17:49:40.578Z",
+      "growth": false
+    },
+    {
+      "digest": "7256a34440",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T22:33:44.194Z",
+      "last": "2026-09-29T22:33:44.194Z",
+      "growth": false
+    },
+    {
+      "digest": "72f0b6c131",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:44:20.894Z",
+      "last": "2026-10-13T15:44:20.894Z",
+      "growth": false
+    },
+    {
+      "digest": "732abe9831",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:28:31.787Z",
+      "last": "2026-10-13T10:28:31.787Z",
+      "growth": false
+    },
+    {
+      "digest": "75a4691ae1",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T17:32:44.273Z",
+      "last": "2026-10-11T17:32:44.273Z",
+      "growth": false
+    },
+    {
+      "digest": "79d597f381",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:43:58.333Z",
+      "last": "2026-10-13T10:43:58.333Z",
+      "growth": false
+    },
+    {
+      "digest": "7b03b94562",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T12:25:45.389Z",
+      "last": "2026-09-30T12:25:45.389Z",
+      "growth": false
+    },
+    {
+      "digest": "7bb1343ad8",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:33:09.358Z",
+      "last": "2026-10-13T10:33:09.358Z",
+      "growth": false
+    },
+    {
+      "digest": "7c323d7ae8",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T09:51:40.296Z",
+      "last": "2026-10-01T09:51:40.296Z",
+      "growth": false
+    },
+    {
+      "digest": "7c8d833cfd",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T12:38:07.284Z",
+      "last": "2026-10-02T12:38:07.284Z",
+      "growth": false
+    },
+    {
+      "digest": "7f9b219f53",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:46:22.691Z",
+      "last": "2026-10-09T13:46:22.691Z",
+      "growth": false
+    },
+    {
+      "digest": "7fc9c178f5",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T13:58:54.975Z",
+      "last": "2026-10-12T13:58:54.975Z",
+      "growth": false
+    },
+    {
+      "digest": "7fde545d47",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T21:52:33.125Z",
+      "last": "2026-09-30T21:52:33.125Z",
+      "growth": false
+    },
+    {
+      "digest": "81300cb965",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:40:03.716Z",
+      "last": "2026-10-09T13:40:03.716Z",
+      "growth": false
+    },
+    {
+      "digest": "826d982063",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T10:19:02.384Z",
+      "last": "2026-10-16T10:19:02.384Z",
+      "growth": false
+    },
+    {
+      "digest": "82727a3de8",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:07:05.022Z",
+      "last": "2026-10-06T15:07:05.022Z",
+      "growth": false
+    },
+    {
+      "digest": "850c4bcde4",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:45:37.940Z",
+      "last": "2026-10-09T13:45:37.940Z",
+      "growth": false
+    },
+    {
+      "digest": "85453fa726",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:33:23.828Z",
+      "last": "2026-10-13T10:33:23.828Z",
+      "growth": false
+    },
+    {
+      "digest": "863250e461",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:44:04.120Z",
+      "last": "2026-10-09T13:44:04.120Z",
+      "growth": false
+    },
+    {
+      "digest": "883aa01ba3",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:40:37.543Z",
+      "last": "2026-10-09T13:40:37.543Z",
+      "growth": false
+    },
+    {
+      "digest": "8c5048fe1d",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T09:48:32.495Z",
+      "last": "2026-10-13T09:48:32.495Z",
+      "growth": false
+    },
+    {
+      "digest": "8cbf8ee9b5",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T08:02:04.706Z",
+      "last": "2026-10-01T08:02:04.706Z",
+      "growth": false
+    },
+    {
+      "digest": "8d4e29ac12",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:41:54.123Z",
+      "last": "2026-10-13T15:41:54.123Z",
+      "growth": false
+    },
+    {
+      "digest": "8d93651c5e",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:03:07.768Z",
+      "last": "2026-10-06T15:03:07.768Z",
+      "growth": false
+    },
+    {
+      "digest": "8e49faaf24",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T14:34:11.459Z",
+      "last": "2026-10-02T14:34:11.459Z",
+      "growth": false
+    },
+    {
+      "digest": "8e56ac42a3",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T17:49:15.957Z",
+      "last": "2026-10-11T17:49:15.957Z",
+      "growth": false
+    },
+    {
+      "digest": "8efe89fcfa",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:16:17.749Z",
+      "last": "2026-10-06T15:16:17.749Z",
+      "growth": false
+    },
+    {
+      "digest": "8f46d16053",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:40:33.487Z",
+      "last": "2026-10-10T12:40:33.487Z",
+      "growth": false
+    },
+    {
+      "digest": "92d2c4fb38",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:22:36.787Z",
+      "last": "2026-10-06T15:22:36.787Z",
+      "growth": false
+    },
+    {
+      "digest": "93728437cd",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:05:00.561Z",
+      "last": "2026-10-06T15:05:00.561Z",
+      "growth": false
+    },
+    {
+      "digest": "9685808a45",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:33:34.285Z",
+      "last": "2026-10-10T12:33:34.285Z",
+      "growth": false
+    },
+    {
+      "digest": "96901cd28c",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T21:57:15.165Z",
+      "last": "2026-10-05T21:57:15.165Z",
+      "growth": false
+    },
+    {
+      "digest": "9719906fd1",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:31:24.910Z",
+      "last": "2026-10-13T10:31:24.910Z",
+      "growth": false
+    },
+    {
+      "digest": "990c8758e1",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:26:09.735Z",
+      "last": "2026-10-13T10:26:09.735Z",
+      "growth": false
+    },
+    {
+      "digest": "9b6d11bd4f",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:39:13.359Z",
+      "last": "2026-10-02T10:39:13.359Z",
+      "growth": false
+    },
+    {
+      "digest": "9b7fa58620",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T13:37:10.755Z",
+      "last": "2026-10-02T13:37:10.755Z",
+      "growth": false
+    },
+    {
+      "digest": "9c1fd83da7",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T12:29:10.090Z",
+      "last": "2026-09-30T12:29:10.090Z",
+      "growth": false
+    },
+    {
+      "digest": "a03f382f3f",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:35:26.358Z",
+      "last": "2026-10-10T12:35:26.358Z",
+      "growth": false
+    },
+    {
+      "digest": "a5f069f14d",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T22:43:37.903Z",
+      "last": "2026-10-02T22:43:37.903Z",
+      "growth": false
+    },
+    {
+      "digest": "a8cc14463b",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:39:33.293Z",
+      "last": "2026-10-13T15:39:33.293Z",
+      "growth": false
+    },
+    {
+      "digest": "a94c5609d9",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:28:03.266Z",
+      "last": "2026-10-13T10:28:03.266Z",
+      "growth": false
+    },
+    {
+      "digest": "a98e24f6db",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:04:06.753Z",
+      "last": "2026-09-29T15:04:06.753Z",
+      "growth": false
+    },
+    {
+      "digest": "aafee1634f",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:31:58.981Z",
+      "last": "2026-10-13T10:31:58.981Z",
+      "growth": false
+    },
+    {
+      "digest": "ac168ed1f3",
+      "records": 1,
+      "sizes": [
+        237
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T17:21:54.193Z",
+      "last": "2026-10-10T17:21:54.193Z",
+      "growth": false
+    },
+    {
+      "digest": "ac574d0104",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:42:00.587Z",
+      "last": "2026-10-10T12:42:00.587Z",
+      "growth": false
+    },
+    {
+      "digest": "acc841e71e",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:17:39.060Z",
+      "last": "2026-10-06T15:17:39.060Z",
+      "growth": false
+    },
+    {
+      "digest": "adf907ae43",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:05:33.988Z",
+      "last": "2026-10-02T10:05:33.988Z",
+      "growth": false
+    },
+    {
+      "digest": "afe607b288",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T12:29:10.007Z",
+      "last": "2026-09-30T12:29:10.007Z",
+      "growth": false
+    },
+    {
+      "digest": "b16a644fc8",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T22:33:24.232Z",
+      "last": "2026-09-29T22:33:24.232Z",
+      "growth": false
+    },
+    {
+      "digest": "b28b59071e",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:41:15.546Z",
+      "last": "2026-10-13T15:41:15.546Z",
+      "growth": false
+    },
+    {
+      "digest": "b396c1bc2b",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T20:40:55.270Z",
+      "last": "2026-09-29T20:40:55.270Z",
+      "growth": false
+    },
+    {
+      "digest": "b520b6b11f",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:40:12.646Z",
+      "last": "2026-10-10T12:40:12.646Z",
+      "growth": false
+    },
+    {
+      "digest": "b5712ee6fa",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T11:17:03.012Z",
+      "last": "2026-10-02T11:17:03.012Z",
+      "growth": false
+    },
+    {
+      "digest": "b831cd58eb",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T21:57:45.173Z",
+      "last": "2026-10-05T21:57:45.173Z",
+      "growth": false
+    },
+    {
+      "digest": "b8526c87d7",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:05:14.698Z",
+      "last": "2026-10-02T10:05:14.698Z",
+      "growth": false
+    },
+    {
+      "digest": "b8b77ae72d",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:38:16.510Z",
+      "last": "2026-10-13T15:38:16.510Z",
+      "growth": false
+    },
+    {
+      "digest": "b8da43dbd5",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T21:27:01.518Z",
+      "last": "2026-09-30T21:27:01.518Z",
+      "growth": false
+    },
+    {
+      "digest": "b99dfbde8e",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:10:33.885Z",
+      "last": "2026-10-06T15:10:33.885Z",
+      "growth": false
+    },
+    {
+      "digest": "bbba066866",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:31:07.153Z",
+      "last": "2026-10-10T12:31:07.153Z",
+      "growth": false
+    },
+    {
+      "digest": "bd8d79e289",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:14:28.719Z",
+      "last": "2026-10-12T14:14:28.719Z",
+      "growth": false
+    },
+    {
+      "digest": "bf186a39bd",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:44:14.388Z",
+      "last": "2026-10-09T13:44:14.388Z",
+      "growth": false
+    },
+    {
+      "digest": "bf7ab839d3",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:05:25.084Z",
+      "last": "2026-09-29T15:05:25.084Z",
+      "growth": false
+    },
+    {
+      "digest": "bf91dd8d9c",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T16:00:08.733Z",
+      "last": "2026-10-16T16:00:08.733Z",
+      "growth": false
+    },
+    {
+      "digest": "bf9a51e492",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T21:26:44.327Z",
+      "last": "2026-09-30T21:26:44.327Z",
+      "growth": false
+    },
+    {
+      "digest": "c597ecfbdc",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:04:52.383Z",
+      "last": "2026-09-29T15:04:52.383Z",
+      "growth": false
+    },
+    {
+      "digest": "c65aa50606",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T11:16:46.171Z",
+      "last": "2026-10-02T11:16:46.171Z",
+      "growth": false
+    },
+    {
+      "digest": "c6aee07678",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-06T15:01:34.852Z",
+      "last": "2026-10-06T15:01:34.852Z",
+      "growth": false
+    },
+    {
+      "digest": "c7ea07c213",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T07:10:22.557Z",
+      "last": "2026-10-01T07:10:22.557Z",
+      "growth": false
+    },
+    {
+      "digest": "c80202e3f0",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:34:14.969Z",
+      "last": "2026-10-10T12:34:14.969Z",
+      "growth": false
+    },
+    {
+      "digest": "c86bd8dab9",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T13:29:19.718Z",
+      "last": "2026-09-30T13:29:19.718Z",
+      "growth": false
+    },
+    {
+      "digest": "c86cd6e2be",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:05:45.905Z",
+      "last": "2026-10-02T10:05:45.905Z",
+      "growth": false
+    },
+    {
+      "digest": "c900fbffae",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:42:51.153Z",
+      "last": "2026-10-13T15:42:51.153Z",
+      "growth": false
+    },
+    {
+      "digest": "c91faef9a3",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:32:51.287Z",
+      "last": "2026-10-10T12:32:51.287Z",
+      "growth": false
+    },
+    {
+      "digest": "cac5ea5c9c",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:36:20.110Z",
+      "last": "2026-10-10T12:36:20.110Z",
+      "growth": false
+    },
+    {
+      "digest": "cacb20d66c",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T10:39:13.411Z",
+      "last": "2026-10-02T10:39:13.411Z",
+      "growth": false
+    },
+    {
+      "digest": "cbe6115103",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T12:29:10.249Z",
+      "last": "2026-09-30T12:29:10.249Z",
+      "growth": false
+    },
+    {
+      "digest": "cc55e1760a",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T06:39:53.477Z",
+      "last": "2026-10-01T06:39:53.477Z",
+      "growth": false
+    },
+    {
+      "digest": "cd2671aff9",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:39:53.839Z",
+      "last": "2026-10-10T12:39:53.839Z",
+      "growth": false
+    },
+    {
+      "digest": "cd87e6e50b",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T21:59:59.588Z",
+      "last": "2026-10-05T21:59:59.588Z",
+      "growth": false
+    },
+    {
+      "digest": "cde78ee74c",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:01:10.974Z",
+      "last": "2026-09-29T15:01:10.974Z",
+      "growth": false
+    },
+    {
+      "digest": "d1babbf29b",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:46:18.645Z",
+      "last": "2026-10-09T13:46:18.645Z",
+      "growth": false
+    },
+    {
+      "digest": "d4cf4b6c01",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-07T11:49:44.242Z",
+      "last": "2026-10-07T11:49:44.242Z",
+      "growth": false
+    },
+    {
+      "digest": "d5cb23c5b0",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:35:45.659Z",
+      "last": "2026-10-10T12:35:45.659Z",
+      "growth": false
+    },
+    {
+      "digest": "d699b2f4d8",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:43:10.882Z",
+      "last": "2026-10-13T15:43:10.882Z",
+      "growth": false
+    },
+    {
+      "digest": "d6ea9cac21",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T14:22:43.056Z",
+      "last": "2026-10-11T14:22:43.056Z",
+      "growth": false
+    },
+    {
+      "digest": "d7491307bc",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T10:19:29.367Z",
+      "last": "2026-10-16T10:19:29.367Z",
+      "growth": false
+    },
+    {
+      "digest": "d806a6ceb4",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:43:21.575Z",
+      "last": "2026-10-10T12:43:21.575Z",
+      "growth": false
+    },
+    {
+      "digest": "da0066f429",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:42:36.601Z",
+      "last": "2026-10-09T13:42:36.601Z",
+      "growth": false
+    },
+    {
+      "digest": "da2c70f112",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T22:42:56.655Z",
+      "last": "2026-10-02T22:42:56.655Z",
+      "growth": false
+    },
+    {
+      "digest": "da37710196",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T13:16:38.445Z",
+      "last": "2026-10-13T13:16:38.445Z",
+      "growth": false
+    },
+    {
+      "digest": "db1fd9df30",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T20:45:55.329Z",
+      "last": "2026-10-05T20:45:55.329Z",
+      "growth": false
+    },
+    {
+      "digest": "dc2acdfee8",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:13:01.253Z",
+      "last": "2026-10-12T14:13:01.253Z",
+      "growth": false
+    },
+    {
+      "digest": "dc493e6f7c",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:42:56.469Z",
+      "last": "2026-10-10T12:42:56.469Z",
+      "growth": false
+    },
+    {
+      "digest": "dcac413ac7",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T17:49:51.328Z",
+      "last": "2026-10-11T17:49:51.328Z",
+      "growth": false
+    },
+    {
+      "digest": "ddeac64e0d",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T08:31:29.357Z",
+      "last": "2026-10-02T08:31:29.357Z",
+      "growth": false
+    },
+    {
+      "digest": "e0ba4654e3",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:41:03.285Z",
+      "last": "2026-10-13T10:41:03.285Z",
+      "growth": false
+    },
+    {
+      "digest": "e0ec530d3a",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:01:48.820Z",
+      "last": "2026-10-13T15:01:48.820Z",
+      "growth": false
+    },
+    {
+      "digest": "e2cc7ae69b",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T10:32:44.474Z",
+      "last": "2026-10-13T10:32:44.474Z",
+      "growth": false
+    },
+    {
+      "digest": "e41555badf",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-05T09:14:13.161Z",
+      "last": "2026-10-05T09:14:13.161Z",
+      "growth": false
+    },
+    {
+      "digest": "e532440be6",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T12:15:49.187Z",
+      "last": "2026-10-04T12:15:49.187Z",
+      "growth": false
+    },
+    {
+      "digest": "e54fd211fc",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-04T10:40:56.722Z",
+      "last": "2026-10-04T10:40:56.722Z",
+      "growth": false
+    },
+    {
+      "digest": "e6905d8042",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:59:01.384Z",
+      "last": "2026-10-09T13:59:01.384Z",
+      "growth": false
+    },
+    {
+      "digest": "e78fa0bdc3",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:40:34.488Z",
+      "last": "2026-10-13T15:40:34.488Z",
+      "growth": false
+    },
+    {
+      "digest": "e7f46561c0",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:32:51.602Z",
+      "last": "2026-10-10T12:32:51.602Z",
+      "growth": false
+    },
+    {
+      "digest": "e8ae6caf33",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T11:55:54.634Z",
+      "last": "2026-10-02T11:55:54.634Z",
+      "growth": false
+    },
+    {
+      "digest": "e9052e044b",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:36:26.778Z",
+      "last": "2026-10-10T12:36:26.778Z",
+      "growth": false
+    },
+    {
+      "digest": "ea0357a55b",
+      "records": 1,
+      "sizes": [
+        248
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-09-29T15:00:49.266Z",
+      "last": "2026-09-29T15:00:49.266Z",
+      "growth": false
+    },
+    {
+      "digest": "ea1531368c",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T19:26:07.950Z",
+      "last": "2026-09-30T19:26:07.950Z",
+      "growth": false
+    },
+    {
+      "digest": "ea54d14081",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T07:10:35.023Z",
+      "last": "2026-10-01T07:10:35.023Z",
+      "growth": false
+    },
+    {
+      "digest": "ebcb63916a",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:37:43.056Z",
+      "last": "2026-10-10T12:37:43.056Z",
+      "growth": false
+    },
+    {
+      "digest": "ebff42ee2f",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T13:29:19.718Z",
+      "last": "2026-09-30T13:29:19.718Z",
+      "growth": false
+    },
+    {
+      "digest": "ecee4fbd62",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-13T15:44:04.919Z",
+      "last": "2026-10-13T15:44:04.919Z",
+      "growth": false
+    },
+    {
+      "digest": "edf6783500",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:31:53.902Z",
+      "last": "2026-10-10T12:31:53.902Z",
+      "growth": false
+    },
+    {
+      "digest": "ef28ce23ad",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-11T17:49:05.968Z",
+      "last": "2026-10-11T17:49:05.968Z",
+      "growth": false
+    },
+    {
+      "digest": "efefab30d2",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T14:34:11.463Z",
+      "last": "2026-10-02T14:34:11.463Z",
+      "growth": false
+    },
+    {
+      "digest": "f1e1022ac8",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-01T09:44:23.233Z",
+      "last": "2026-10-01T09:44:23.233Z",
+      "growth": false
+    },
+    {
+      "digest": "f24330d61b",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:13:13.857Z",
+      "last": "2026-10-12T14:13:13.857Z",
+      "growth": false
+    },
+    {
+      "digest": "f2f9418c10",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-16T10:41:52.303Z",
+      "last": "2026-10-16T10:41:52.303Z",
+      "growth": false
+    },
+    {
+      "digest": "f5313a8827",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T11:55:54.701Z",
+      "last": "2026-10-02T11:55:54.701Z",
+      "growth": false
+    },
+    {
+      "digest": "f618878572",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-09-30T17:21:41.389Z",
+      "last": "2026-09-30T17:21:41.389Z",
+      "growth": false
+    },
+    {
+      "digest": "f85fae6aad",
+      "records": 1,
+      "sizes": [
+        227
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-10T12:34:45.651Z",
+      "last": "2026-10-10T12:34:45.651Z",
+      "growth": false
+    },
+    {
+      "digest": "f9a183d056",
+      "records": 1,
+      "sizes": [
+        202
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-09T13:59:22.718Z",
+      "last": "2026-10-09T13:59:22.718Z",
+      "growth": false
+    },
+    {
+      "digest": "fb30ac13fd",
+      "records": 1,
+      "sizes": [],
+      "verdicts": [
+        "unverified"
+      ],
+      "first": "2026-10-02T12:38:07.305Z",
+      "last": "2026-10-02T12:38:07.305Z",
+      "growth": false
+    },
+    {
+      "digest": "fe39807542",
+      "records": 1,
+      "sizes": [
+        238
+      ],
+      "verdicts": [
+        "allowed"
+      ],
+      "first": "2026-10-12T14:11:01.202Z",
+      "last": "2026-10-12T14:11:01.202Z",
+      "growth": false
+    }
+  ],
+  "arms": {
+    "present": "ready",
+    "absent": "blocked",
+    "empty": "ready",
+    "mutation": "ready",
+    "mutationCleanedUp": true
+  },
+  "armNotes": [
+    {
+      "arm": "present",
+      "reading": "ready",
+      "note": "resolved the first listing entry, adopt-c-bounds-safety"
+    },
+    {
+      "arm": "absent",
+      "reading": "blocked",
+      "note": "expected blocked; this is the control, a resolver that says yes to everything measures nothing"
+    },
+    {
+      "arm": "empty",
+      "reading": "ready",
+      "note": "isSpawnable([]) reads false, which answers a different question than \"may this delegation proceed\""
+    },
+    {
+      "arm": "mutation",
+      "reading": "ready",
+      "note": "same adapter instance: 0 capability at the first listing, 1 at the second"
+    }
+  ],
+  "registry": {
+    "root": "/Users/memo/.agents/skills",
+    "capabilities": 238,
+    "unreadable": 52,
+    "anyRootUnreadable": false,
+    "mutationRemoved": true
+  },
+  "clause1": "conformant",
+  "clause2": "scoped-out: no external reference implements it and the deployed sensor is in shadow mode by ADR-001, see SPEC.md"
+}
