@@ -28,10 +28,23 @@ the requirement as unsatisfiable. Their session-start snapshot predates the
 skill.
 
 What the case measures: at delegation time, against the live registry, is a
-newly created skill resolvable, and does an unresolved requirement stop the
-spawn? This is the property `resolveCapabilities()` in
-`guillaume-flambard/cuesheet` implements. The case passes when resolution
-happens live and a missing skill blocks before spawn.
+capability that appeared after the session started resolvable? This is the
+property `resolveCapabilities()` in `guillaume-flambard/cuesheet` implements.
+
+The row originally carried a second clause, "a missing skill blocks before
+spawn", and counted the case as passing only when both held. That clause is
+scoped out and recorded as a deferral: verdicts here are against a named
+standard and a named reference implementation, clause one has one, and clause
+two has only our own intent plus a sensor that is deliberately in shadow mode
+and refuses nothing. Scoring it `non-conformant` against our own design intent
+would be a research claim wearing a conformance label. The clause returns when
+either an external reference exists or enforcement stops being deferred.
+
+Measured 2026-10-17: clause one **conformant**. Two real sessions show the
+registry the gate reads growing inside the session, and the controlled
+mutation arm resolves a capability absent from the preceding listing. Case
+`skl-01/`, with the counts, the hand-read note and the instrument findings the
+run produced.
 
 What it deliberately does not claim: the runtime's own hot reload. Mid-turn
 reload inside a foreign runtime is a runtime property, and making that claim
