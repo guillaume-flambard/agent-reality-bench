@@ -120,6 +120,29 @@ path this case checks now behaves as the reference does. `github-readme` is
 present and readable in today's registry; it was the session snapshot that made
 it invisible then.
 
+## Harness feedback
+
+Running the case produced two hand-offs and one decision not to act.
+
+The four findings about our own instrument are filed as `memolabs-dev/cuesheet#77`:
+the capability registry refuses 52 of 290 skill folders whose `SKILL.md` resolves
+outside its root, the gate reads one root of the three this machine exposes, and
+the extractor both misses French directives and manufactures a requirement named
+`here` out of ordinary English prose.
+
+Regenerating the frontier for this session found that `frontier-cli` publishes an
+empty portfolio: `DEFAULT_PROJECTS_ROOT` still points at `~/projects`, removed on
+2026-10-14, and `parseRegistry` returns `[]` when the registry file is missing, so
+"not where I looked" is indistinguishable from "the portfolio declares no
+repository". Filed as `memolabs-dev/cuesheet#78`.
+
+The regenerated frontier was therefore not written. `~/Vault/Harness/FRONTIER.md`
+stays as it was, and the durable objects were corrected instead
+(`shadow_delegations` from 0 to 1075, plus `shadow_evaluated_with_requirement: 0`,
+with the shadow wake condition now requiring a delegation that carries a
+requirement). A hand-edited frontier is a second place for the portfolio to be
+wrong, and the regenerated one would have said the portfolio was empty.
+
 ## Reproduce
 
 ```bash
