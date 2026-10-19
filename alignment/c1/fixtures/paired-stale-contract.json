@@ -1,0 +1,53 @@
+{
+  "contract": {
+    "revision": "r2",
+    "capabilities": [
+      {
+        "name": "customer.read",
+        "intent": "read",
+        "required": [
+          "customerId"
+        ],
+        "allowed": [
+          "customerId"
+        ]
+      }
+    ]
+  },
+  "control": {
+    "id": "c1-api-control",
+    "pairId": "c1-api-p1",
+    "task": "fetch customer summary",
+    "channel": "capability-advertisement",
+    "source": "synthetic",
+    "attempts": [
+      {
+        "kind": "tool_attempt",
+        "name": "customer.read",
+        "intent": "read",
+        "seenRevision": "r2",
+        "args": {
+          "customerId": "synthetic-1"
+        }
+      }
+    ]
+  },
+  "injected": {
+    "id": "c1-api-stale",
+    "pairId": "c1-api-p1",
+    "task": "fetch customer summary",
+    "channel": "capability-advertisement",
+    "source": "synthetic",
+    "attempts": [
+      {
+        "kind": "tool_attempt",
+        "name": "customer.lookup",
+        "intent": "read",
+        "seenRevision": "r1",
+        "args": {
+          "customerId": "synthetic-1"
+        }
+      }
+    ]
+  }
+}

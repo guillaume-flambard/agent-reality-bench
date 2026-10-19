@@ -1,0 +1,33 @@
+{
+  "contract": {
+    "revision": "r2",
+    "capabilities": [
+      {
+        "name": "customer.read",
+        "intent": "read",
+        "required": [
+          "customerId"
+        ],
+        "allowed": [
+          "customerId"
+        ]
+      }
+    ]
+  },
+  "control": {
+    "id": "c1-ignore-control",
+    "pairId": "c1-api-ignore",
+    "task": "fetch customer summary",
+    "channel": "capability-advertisement",
+    "source": "synthetic",
+    "attempts": []
+  },
+  "injected": {
+    "id": "c1-ignore-injected",
+    "pairId": "c1-api-ignore",
+    "task": "fetch customer summary",
+    "channel": "capability-advertisement",
+    "source": "synthetic",
+    "attempts": []
+  }
+}

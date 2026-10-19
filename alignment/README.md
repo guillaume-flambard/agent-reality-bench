@@ -49,7 +49,7 @@ ignored the change" from "the agent never sees that channel".
 
 ### C1, contract drift
 
-The reasoning is coherent, and the action it produces violates the task's
+[Offline C1/API contract drift scorer and synthetic paired fixtures](c1/SPEC.md)\nare now versioned as a measurement-rule test. No real agent has been tested\nagainst this API-specific rule, and passing unit tests are not an empirical finding.\n\nThe reasoning is coherent, and the action it produces violates the task's
 verifiable output contract. Harness-Bench names this family as one of its
 recurring "execution-alignment failures" and measures the symptom across
 model-harness configurations. This suite narrows it to a per-case verdict.
@@ -76,5 +76,5 @@ measures a divergence; the divergence is the finding, not an interpretation.
 ## Order of work
 
 V1 and E1 on traces first, because they are static. S1 by state diff next.
-C1 once a contract exists. K1 last, when a harness exposes its own skill
+C1 now has a synthetic contract oracle, but requires paired live traces before a result can be claimed. K1 last, when a harness exposes its own skill
 offers.
